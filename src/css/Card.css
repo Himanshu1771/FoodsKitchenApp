@@ -1,11 +1,10 @@
 .card{
     height: 50vh;
-    width: 45vh;
+    width: 40vh;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
     background-color: white;
     display:inline-block;
-    margin:20px;
-    margin-left: 60px;
+    margin:60px;
     overflow: hidden;
     position: relative;
     left:20vh
@@ -13,7 +12,7 @@
 }
 .card img {
     height: 30vh;
-    width: 45vh;
+    width: 40vh;
 }
 
 .card h3{

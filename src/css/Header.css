@@ -44,3 +44,18 @@
     right: 25px;
     bottom: 10px;
   }
+
+  .logout{
+   position: absolute;
+   left: 175vh;
+   width: 110px;  
+   height: 30px;
+   margin-top: 10px;  
+   border: 2px solid #5a0bc2; 
+   border-radius: 17px;    
+   color: #5a0bc2;
+   cursor: pointer;
+   top: 1.5vh;
+   visibility: hidden;
+   
+  }

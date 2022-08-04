@@ -8,24 +8,26 @@ import CardHome from './components/CardHome'
 import Login from './components/Login'
 import Cart from './components/Cart'
 import Checkout from './components/Checkout'
-
-
-
+import Protected from "./components/Protected";
 
 function App() {
+
   return (
   <Provider store={store}>
     <BrowserRouter>
-      <Header />
+    <Header />
         <Routes>
-        <Route path='/Login' element={<Login/>} />
-        <Route path='/' element={<Home/>} />
-        <Route path='/Card' element={<CardHome/>} />
+        <Route path='/'element={<Login/>} />  
+        <Route element={<Protected/>}>  
+        <Route path='/Home' element={<Home/>} />
+        <Route path='/Card' element={<CardHome/>}/>
         <Route path='/Cart' element={<Cart/>} />
-        <Route path='/Checkout' element={<Checkout/>} />
+        <Route path='/Checkout' element={<Checkout/>} />   
+        </Route>     
         </Routes>
     </BrowserRouter>
     </Provider>
+    
   )
 }
 

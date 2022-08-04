@@ -3,7 +3,7 @@
         width: 382px;  
         overflow: hidden;  
         margin: auto;    
-        padding: 80px;  
+        padding: 100px;  
         background-color: white;
         border-radius: 15px ;
         box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); 
@@ -11,11 +11,13 @@
 h2{  
     text-align: center;  
     color: #5a0bc2;  
-    padding: 20px;  
+    padding: 50px; 
+    
 }  
 label{  
     color: #5a0bc2; 
-    font-size: 17px;  
+    font-size: 17px; 
+   
 }  
 #Uname{  
     width: 300px;  
@@ -24,6 +26,7 @@ label{
     border-radius: 3px;  
     padding-left: 8px;
     margin-bottom: 10px;  
+    
 }  
 #Pass{  
     width: 300px;  
@@ -36,7 +39,7 @@ label{
 #log{  
     width: 310px;  
     height: 30px;
-    margin-top: 10px;  
+    margin-top: 15px;  
     border: 2px solid #5a0bc2; 
     border-radius: 17px;    
     color: #5a0bc2;

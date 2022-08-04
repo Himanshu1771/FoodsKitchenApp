@@ -1,29 +1,29 @@
-.card{
+.cartcard{
     height: 50vh;
-    width: 45vh;
+    width: 40vh;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
     background-color: white;
     display:inline-block;
-    margin:20px;
+    margin:50px;
     margin-left: 60px;
     overflow: hidden;
     position: relative;
     left:20vh
 
 }
-.card img {
+.cartcard img {
     height: 30vh;
-    width: 45vh;
+    width: 40vh;
 }
 
-.card h3{
+.cartcard h3{
     position: relative;
     
     left: 10px;
     background-color: white;
 }
 
-.card p{
+.cartcard p{
     position: relative;
     left: 10px;
     top: 5px;
@@ -44,6 +44,19 @@
     width: 60px;
 }
 
+.dbtn{
+    overflow: hidden;
+    height: 30px;
+    width: 60px;
+    margin: 85px; 
+    border: none; 
+    margin-top: 40px;
+    cursor: pointer;
+}
+.dbtn img{
+    height:30px;
+    width: 60px;
+}
 .cbtn{
     height: 40px;
     width: 150px;
@@ -53,13 +66,6 @@
     top: 10vh;
     left: 150vh;
     cursor: pointer;
-}
-
-.cbtn:disabled,
-.cbtn[disabled]{
-  border: 1px solid #999999;
-  background-color: #cccccc;
-  color: #666666;
 }
 
 
