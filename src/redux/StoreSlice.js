@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 import axios from 'axios'
 
  export const fetchAsyncFeeds = createAsyncThunk('store/fetchAsyncFeeds', async () => {
-  const response = await axios.get("http://127.0.0.1:5500/foodapp/feeds.json")
+  const response = await axios.get("http://127.0.0.1:5501/foodapp/feeds.json")
   return response.data;
 })
 
@@ -38,7 +38,7 @@ import axios from 'axios'
       if (state.cartitem[itemIndex].cardQuantity > 1) {
         state.cartitem[itemIndex].cardQuantity -= 1;
       } else if
-        (state.cartitem[itemIndex].cardQuantity == 1){
+        (state.cartitem[itemIndex].cardQuantity === 1){
           const items = state.cartitem.filter(cartitem => cartitem.id !== actions.payload.id);
           state.cartitem = items
      } },
@@ -50,7 +50,7 @@ import axios from 'axios'
     
     getquantity(state,action)
    {
-    const {total,quantity} =  state.cartitem.reduce((carttotal,cartitem)=>{
+    const {quantity} =  state.cartitem.reduce((carttotal,cartitem)=>{
       const {cardQuantity} = cartitem;
       carttotal.quantity += cardQuantity;
       return carttotal

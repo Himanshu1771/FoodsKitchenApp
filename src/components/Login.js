@@ -15,8 +15,6 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const pattern= /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/
-
    if(email==null){
     alert('Enter the correct Email')
     }

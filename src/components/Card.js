@@ -6,7 +6,6 @@ import { addcart } from '../redux/StoreSlice';
 
 const Card = (props) => {
   const {data} = props;
-  const item = useSelector(state => state.store)
   const dispatch = useDispatch()
 
   const handleadd =(data) =>{
