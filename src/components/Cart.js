@@ -13,6 +13,8 @@ const dispatch = useDispatch()
 const cart = useSelector(state => state.store)
 const navigate = useNavigate();
 
+
+
 const handleadd =(data) =>{
   dispatch(addcart(data));
   
@@ -22,10 +24,15 @@ const handleremove = (data) => {
 }
 const handledelete = (data) => {
   dispatch(removecart(data))
-  document.getElementById("Checkout-btn").disabled=true;
-  document.getElementById("Checkout-btn").style.backgroundColor='gray';
+ 
+    document.getElementById("Checkout-btn").disabled=true;
+    document.getElementById("Checkout-btn").style.backgroundColor='gray';
+  
+
 }
+
 const handlecheckout = (e)=>{
+
   const cart = document.getElementById('scart')
   cart.style.visibility = 'hidden'
 
@@ -33,7 +40,8 @@ const handlecheckout = (e)=>{
   badge.style.visibility = 'hidden'
 
   navigate("/Checkout")
-}
+
+  }
   return (
     
    <div>
