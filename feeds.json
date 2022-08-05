@@ -1,5 +1,6 @@
-[
-    {
+{
+ "feeds": [
+   {
         "id":1,
         "name": "Hamburger",
         "price": "200",
@@ -23,4 +24,4 @@
         "price": "50",
         "image": "images/pepsi.jpeg"
     }
-]
+]}

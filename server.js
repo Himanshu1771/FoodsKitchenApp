@@ -5,7 +5,7 @@ const middlewares = jsonServer.defaults({
     static: './build',
 });
 
-const port = Process.env.PORT || 5500;
+const port = process.env.PORT || 5500;
 server.use(middlewares);
 server.use(
     jsonServer.rewriter({
@@ -14,5 +14,7 @@ server.use(
 );
 server.use(router);
 server.listen(port, () =>{
-    console.log(`Server is running on`);
+    console.log(`Server is running on ${port}`);
 });
+
+
