@@ -1,7 +1,7 @@
 import React from "react";
 import '../css/Card.css'
 import add from "../assets/add.svg";
-import {useSelector, useDispatch } from 'react-redux';
+import {useDispatch } from 'react-redux';
 import { addcart } from '../redux/StoreSlice';
 
 const Card = (props) => {
