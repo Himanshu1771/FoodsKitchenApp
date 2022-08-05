@@ -8,6 +8,6 @@ const Protected = () => {
 
     const user = useSelector(selectUser);
 
-    return <>({user ? <Outlet/> :<Navigate to={'/'}/>})</>
+    return <>{user ? <Outlet/> :<Navigate to={'/'}/>}</>
 }
 export default Protected
