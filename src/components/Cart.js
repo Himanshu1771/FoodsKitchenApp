@@ -59,6 +59,7 @@ const handlecheckout = (e)=>{
     ))}
   
   <div>
+ 
   <button type="button" className='cbtn' id='Checkout-btn' onClick={(e) =>handlecheckout(e) }>Checkout</button>
   </div>
 </div>
