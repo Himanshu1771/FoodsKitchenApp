@@ -13,8 +13,8 @@ const Feedslisting = () => {
   let renderStore = "";
 
   renderStore = store.length > 0 ? (
-    store.map((store,index)=>(
-      <Card key={index} data={store}/>
+    store.map((store)=>(
+      <Card data={store}/>
     ))
   ): (<div className = "error"><h3>{store.Error
 }</h3></div >)
