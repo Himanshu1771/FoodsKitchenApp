@@ -1,4 +1,5 @@
- [
+{
+    "feeds" : [
    {
         "id":1,
         "name": "Hamburger",
@@ -24,3 +25,4 @@
         "image": "images/pepsi.jpeg"
     }
 ]
+}

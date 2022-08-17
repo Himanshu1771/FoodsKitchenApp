@@ -25,10 +25,6 @@ const handleremove = (data) => {
 const handledelete = (data) => {
   dispatch(removecart(data))
  
-    document.getElementById("Checkout-btn").disabled=true;
-    document.getElementById("Checkout-btn").style.backgroundColor='gray';
-  
-
 }
 
 const handlecheckout = (e)=>{
