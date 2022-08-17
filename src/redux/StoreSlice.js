@@ -2,9 +2,10 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 import axios from 'axios'
 
  export const fetchAsyncFeeds = createAsyncThunk('store/fetchAsyncFeeds', async () => {
-  const response = await axios.get("https://foodskitchen.herokuapp.com/api")
+  const response = await axios.get("http://127.0.0.1:5500/feeds.json")
   return response.data;
 })
+
 
  export const StoreSlice = createSlice({
   name: 'store',
