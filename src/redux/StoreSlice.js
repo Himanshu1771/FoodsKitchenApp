@@ -6,7 +6,6 @@ import axios from 'axios'
   return response.data;
 })
 
-
  export const StoreSlice = createSlice({
   name: 'store',
   initialState:{
